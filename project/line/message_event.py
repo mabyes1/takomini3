@@ -8,7 +8,7 @@ import config
 line_bot_api = LineBotApi(config.LINE_CHANNEL_ACCESS_TOKEN)
 firebase_url = config.FIREBASE_URL
 genai.configure(api_key = config.GOOGLE_API_KEY)
-model = genai.GenerativeModel('gemini-1.5-flash')
+model = genai.GenerativeModel('gemini-pro')
 def handle_message(event) -> None:
  """Event - User sent message
 
